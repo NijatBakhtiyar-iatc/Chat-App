@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="module" src="./modulnan/index.js" defer></script> -->
+    <!-- <script type="module" src="./modulnan/index.mjs" defer></script> // ferqi yoxdu yuxaridakinnan sedece hanisinin modul hansi modul olmadigini bilmek ucun -->
+
+    <!-- // firebase -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script type="module" defer src="https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js"></script>
+    <script type="module" defer src="./firebase/index.mjs"></script>
+    <title>Firebase</title>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        #chat{
+            border: 1px solid #000;
+            height: 200px;
+            max-height: 200px;
+            overflow: auto;
+        }
+
+        #message{
+            width: 100%;
+            margin-top: 20px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .message-node{
+            padding: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .message-node + .message-node{
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="text" id="A">
+    <button id="AddBtn">Add</button> -->
+
+    <!-- <div id="count"></div>
+    <button id="A">Increment</button> -->
+
+    <!-- <input type="text" id="ad">
+    <button id="A">Add</button>
+    <ul id="students"></ul> -->
+
+    <!-- // chat app -->
+    <div id="chat"></div>
+    <input type="color" id="color">
+    <form id="inp-form">
+        <input type="text" id="message">
+    </form>
+</body>
+</html>
